@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="expenseTrack.css">
+</head>
+
+<body>
+    <header>
+        <h1>Expense Tracker</h1>
+    </header>
+    <main>
+        <form id="expense-form">
+            <label for="expense-amount">Expense Amount (in &#x20B9;)</label>
+            <input type="number" name="expense" id="expense-amount" placeholder="How much did you spent?">
+            <label for="description">Description</label>
+            <input type="text" name="description" id="description" placeholder="What did you spent on?">
+            <label for="category">Category</label>
+            <select name="category" id="category">
+                <option value="None" selected>None</option>
+                <option value="Travel">Travel</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Food">Food</option>
+                <option value="Groceries">Groceries</option>
+                <option value="Bills">Bills</option>
+                <option value="Miscellaneous">Miscellaneous</option>
+            </select>
+            <button id="btn">Add Expense</button>
+        </form>
+        <ul id="expense-list"></ul>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
+    <script src="expenseTrack.js"></script>
+</body>
+
+</html>
